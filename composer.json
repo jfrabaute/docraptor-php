@@ -1,6 +1,6 @@
 {
     "name": "docraptor/docraptor",
-    "version": "2.0.0",
+    "version": "2.0.0-patch1",
     "description": "A wrapper for the DocRaptor HTML to PDF/XLS service.",
     "keywords": [
         "docraptor",
@@ -23,15 +23,19 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2 || ^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8"
     },
     "autoload": {
-        "psr-4": { "DocRaptor\\" : "lib/" }
+        "psr-4": {
+            "DocRaptor\\": "lib/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "DocRaptor\\" : "test/" }
+        "psr-4": {
+            "DocRaptor\\": "test/"
+        }
     }
 }
